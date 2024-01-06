@@ -15,12 +15,12 @@ const Main = () => {
 
   //console.log(movie);
   const truncateString = (str, num) => {
-    if(str.length > num) {
-      return str.slice(0, num) + '...'
+    if (str?.length > num) {
+      return str.slice(0, num) + "...";
     } else {
-      return str
+      return str;
     }
-  }
+  };
 
   return (
     <div className="w-full h-[550px] text-white">
@@ -41,8 +41,12 @@ const Main = () => {
               watch later
             </button>
           </div>
-          <p className="text-gray-400 text-sm">Released: {movie?.release_date}</p>
-          <p className="w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-gray-200">{truncateString(movie?.overview, 150)}</p>
+          <p className="text-gray-400 text-sm">
+            Released: {movie?.release_date}
+          </p>
+          <p className="w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-gray-200">
+            {truncateString(movie?.overview, 150)}
+          </p>
         </div>
       </div>
     </div>
