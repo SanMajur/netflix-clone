@@ -58,7 +58,7 @@ const SavedShows = () => {
                 className="w-full h-auto block"
               />
               <div className="absolute top-0 left-0 h-full w-full hover:bg-black/80 opacity-0 hover:opacity-100 text-white">
-                <p className="white-space-normal text-xs md:text-sm font-bold flex justify-center h-full items-center">
+                <p className="white-space-normal text-xs md:text-sm font-bold flex justify-center h-full items-center textWrap text-center">
                   {item?.title}
                 </p>
                 <p onClick={() => deleteShow(item.id)} className="absolute text-gray-300 top-4 right-4"><AiOutlineClose /></p>
